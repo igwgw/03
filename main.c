@@ -2,15 +2,17 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]){
-    char c;
-    char next;
+    int a;
+    int b;
 
-    printf("enter a character: ");
-    scanf("%c", &c);
+    printf("Enter the numerator : ");
+    scanf("%d", &a);
 
-    next = c + 1;
+    printf("Enter the denominator : ");
+    scanf("%d", &b); 
+    
+    printf("The result of the division is %f.\n" ,(float)a/b);
 
-    printf("the next character of %c(%i) is %c(%i)\n", c, c, next, next);
 
     system("pause");
     return 0;
